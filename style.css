@@ -1,0 +1,133 @@
+:root {
+	font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100%;
+	font-size: 1.6rem;
+}
+
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+	isolation: isolate;
+}
+
+/* ---------GENERAL STYLING--------- */
+body {
+	background-color: silver;
+}
+
+h1 {
+	font-size: 10rem;
+}
+h1:hover {
+	color: orangered;
+	cursor: pointer;
+}
+
+h2 {
+	font-size: 4rem;
+}
+
+.cell {
+	width: 130px;
+	height: 130px;
+	border: 2px solid black;
+	box-shadow: 0 0 0 2px;
+	line-height: 130px;
+	font-size: 80px;
+	cursor: pointer;
+}
+.cell:hover {
+	background-color: lightskyblue;
+}
+
+#gameContainer {
+	font-family: "Permanent Marker", cursive;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+}
+
+#cellContainer {
+	display: grid;
+	grid-template-columns: repeat(3, auto);
+	width: 390px;
+	margin: auto;
+}
+
+#restartBtn {
+	padding: 1rem 3rem;
+	font-size: 2.5rem;
+	border: 0;
+	border-radius: 1rem;
+	background-color: orangered;
+	cursor: pointer;
+}
+#restartBtn:hover {
+	background-color: black;
+	color: orangered;
+}
+
+#footer {
+	position: fixed;
+	bottom: 0;
+	left: 42.5%;
+	padding: 3rem;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	letter-spacing: 1px;
+	margin: 0 auto;
+}
+
+#footer a {
+	text-decoration: none;
+	color: black;
+}
+#footer a:hover {
+	color: orangered;
+	cursor: pointer;
+}
